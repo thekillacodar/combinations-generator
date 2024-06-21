@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinations Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Combinations Generator</h1>
+
+    <label for="inputItems">Enter a series of items separated by spaces:</label>
+    <input type="text" id="inputItems" placeholder="e.g., A 1 B 2 C" />
+
+    <br><br>
+
+    <label for="desiredItems">Enter the desired number of items in each combination:</label>
+    <input type="number" id="desiredItems" min="1" value="1" />
+
+    <br><br>
+
+    <button onclick="generateCombinations()">Generate Combinations</button>
+    <div class="stats" id="stats"></div>
+
+    <button class="print-button" onclick="printResults()">Print Results</button>
+    <div id="inputTable"></div>
+
+    <div id="result" class="array"></div>
+
+      <script src="gen.js"></script>
+</body>
+</html>
